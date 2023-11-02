@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookshelf</title>
+    <title>Shopping list</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -21,21 +21,24 @@
   </head>
   <body class="loading-gentle">
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+
     <include src="./partials/header.html"></include>
+
     <include src="./partials/mobile-menu.html"></include>
+
     <main>
-      <div class="main-wrapper container">
-        <div class="elements-location">
-          <include src="./partials/categories.html"></include>
+      <div class="container shopping-list-wrapper">
+        <div class="support-wrapper">
           <include src="./partials/support.html"></include>
         </div>
-        <include src="./partials/books-list.html"></include>
+        <div class="cart-list-wrapper">
+          <include src="./partials/shopping-list-content.html"></include>
+        </div>
       </div>
       <include src="./partials/up-btn.html"></include>
-      <include src="./partials/modal-card.html"></include>
     </main>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js" type="module"></script>
+    <script src="./index-shopping.js" type="module"></script>
   </body>
 </html>

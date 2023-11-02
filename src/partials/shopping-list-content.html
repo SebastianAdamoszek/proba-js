@@ -1,0 +1,35 @@
+<section class="shopping">
+  <div class="shopping-content">
+    <h1 class="shopping-title">Shopping <span class="shopping-title__accent">List</span></h1>
+    <div class="loader loader--shopping-list"></div>
+    <div class="shopping-empty">
+      <p class="shopping-empty__text">This page is empty, add some books and proceed to order.</p>
+      <picture class="shopping-empty__img">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/shopping_list_books-tablet.png     1x,
+            ./images/shopping_list_books-tablet.@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/shopping_list_books.png 1x, ./images/shopping_list_books.@2x.png 2x"
+        />
+        <img
+          src="./images/shopping_list_books.png"
+          alt="Empty shopping list placeholder. Pile of books."
+        />
+      </picture>
+    </div>
+    <div class="shopping-list">
+      <ul class="cards-list"></ul>
+    </div>
+   <div class="pagination">
+      <ul class="pagination__buttons">
+        <li><button class="prev-page pagination__button">Previous</button></li>
+        <li><button class="next-page pagination__button">Next</button></li>
+      </ul>
+    </div>
+  </div>
+</section>

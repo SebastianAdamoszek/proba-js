@@ -1,0 +1,46 @@
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  @include desktop {
+    max-width: 1440px;
+    padding: 0 24px;
+  }
+}
+
+main {
+  padding-top: 64px;
+
+  @include tablet {
+    padding-top: 72px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+// GENTLE LOADING OF ELEMENTS
+
+.loading-gentle {
+  animation: fadeIn 0.35s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
