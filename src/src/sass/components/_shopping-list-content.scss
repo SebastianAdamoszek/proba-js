@@ -287,31 +287,3 @@
 body {
   overflow-y: scroll;
 }
-
-// styles buttons pagination
-.pagination {
-  &__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  &__button {
-    border: 3px solid var(--color-purple-btn);
-    padding: 10px;
-    border-radius: 50px;
-  }
-  &__button-prev {
-    background-color: var(--color-black-btn);
-    color: var(--color-white-btn);
-
-  }
-  &__button-next {
-    background-color: var(--color-yellow-btn);
-  }
-}
-
-.prev-page,
-.next-page {
-  display: none;
-}
