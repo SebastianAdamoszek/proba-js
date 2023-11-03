@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://sebastianadamoszek.github.io/proba-js.git",
+  "homepage": "https://sebastianadamoszek.github.io/project-js.git",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /proba-js"
+    "build": "parcel build src/*.html --public-url /project-js"
   },
   "repository": {
     "type": "git",
