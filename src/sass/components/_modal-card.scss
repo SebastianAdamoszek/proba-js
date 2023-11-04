@@ -14,7 +14,7 @@
     max-width: 335px;
     height: auto;
     overflow-y: auto;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     border: 2px solid var(--color-main-font);
     border-radius: 18px;
     background-color: var(--color-header);
@@ -206,14 +206,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 44px 62px;
-  margin-bottom: 8px;
   width: auto;
   height: auto;
   @include tablet {
     max-width: 499px;
     // max-height: auto;
-    padding: 0;
-    margin: auto 40px;
   }
 
   &__content {
@@ -229,6 +226,8 @@
     font-weight: 700;
     letter-spacing: -0.7px;
     line-height: 18px;
+    margin-bottom: 40px;
+
     @include tablet {
       font-size: 18px;
       font-weight: 700;
