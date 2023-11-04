@@ -145,7 +145,7 @@ const showModalCard = myBook => {
         </div>
       </div>
     </div>
-    <div class="">
+    <div class="button-shopping__box">
       <div class="button-shopping">
         <button class="button-shopping__content" data-modalid="${_id}">add to shopping list</button>
       </div>
