@@ -11,9 +11,8 @@
   animation: show 0.25s ease-in-out;
 
   &__box {
-    position: relative;
     max-width: 335px;
-    max-height: 100vh;
+    height: auto;
     overflow-y: auto;
     padding-bottom: 40px;
     border: 2px solid var(--color-main-font);
@@ -49,9 +48,9 @@
     height: 408px;
     border-radius: 8px;
     overflow: hidden;
-    margin: 40px 24px 0 24px;
+    margin: 4px 24px 0 24px;
     @include tablet {
-      margin: 40px 0 40px 40px;
+      margin: 0 0 40px 40px;
       width: 192px;
       height: 281px;
     }
@@ -66,25 +65,24 @@
   }
 
   &__close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    @include tablet {
-      top: 24px;
-      right: 24px;
-    }
-  }
-  &__close-box {
-    @include flex-align;
-    width: 24px;
-    height: 24px;
+    display: flex;
+    justify-content: end;
+    padding: 12px 12px 0 0;
     stroke: var(--color-header-border);
-    border-radius: 50%;
+
     &:hover,
     &:focus {
       stroke: var(--color-purple-btn);
     }
+    @include tablet {
+      padding: 24px 24px 0 0;
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
   }
+
   &__info {
     margin: 0 24px 44px 24px;
     max-height: auto;
@@ -154,10 +152,6 @@
     max-height: 32px;
   }
 
-  &___congrats {
-    margin-top: 8px;
-  }
-
   &__congrats-text {
     font-family: 'DM Sans';
     text-align: center;
@@ -169,6 +163,7 @@
     line-height: 12px;
     color: var(--color-info-empty);
     font-family: 'DM Sans';
+    padding-top: 8px;
     @include tablet {
       font-size: 12px;
       font-weight: 400;
@@ -186,11 +181,6 @@
       line-height: 14px;
     }
   }
-  &__footer {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-  }
 }
 .button-shopping {
   display: flex;
@@ -202,7 +192,7 @@
   height: auto;
   @include tablet {
     max-width: 499px;
-    max-height: auto;
+    // max-height: auto;
     padding: 0;
     margin: auto 40px;
   }
