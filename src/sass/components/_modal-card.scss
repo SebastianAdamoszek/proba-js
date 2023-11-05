@@ -151,67 +151,25 @@
     max-width: 115px;
     max-height: 32px;
   }
-
-  &__congrats-text {
-    font-family: 'DM Sans';
-    text-align: center;
-    max-width: 242px;
-    margin: auto;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: -0.4px;
-    line-height: 12px;
-    color: var(--color-info-empty);
-    font-family: 'DM Sans';
-
-    @include tablet {
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: -0.48px;
-      line-height: 14px;
-      bottom: 5px;
-      margin: auto;
-      max-width: 324px;
-      max-height: auto;
-    }
-    @include desktop {
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: -0.48px;
-      line-height: 14px;
-    }
-  }
 }
-.comment {
 
-  @include tablet {
-    position: absolute;
-    width: 579px;
-    margin-top: 470px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid var(--color-main-font);
-    border-left: 2px solid var(--color-main-font);
-    border-right: 2px solid var(--color-main-font);
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    background-color: var(--color-header);
-
-  }
-}
 .button-shopping {
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 44px 62px;
   width: auto;
   height: auto;
   @include tablet {
     max-width: 499px;
 
-   &__box {
+    &__box {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -243,6 +201,54 @@
     &:focus {
       color: var(--color-white-btn);
       background-color: var(--color-purple-btn);
+    }
+  }
+  &__comment {
+    position: absolute;
+    width: 335px;
+    margin-top: -32px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--color-main-font);
+    border-left: 2px solid var(--color-main-font);
+    border-right: 2px solid var(--color-main-font);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: var(--color-header);
+    margin-left: -2px;
+
+    @include tablet {
+      width: 579px;
+      margin-top: 95px;
+      margin-left: 0;
+    }
+  }
+  &__comment-text {
+    font-family: 'DM Sans';
+    text-align: center;
+    max-width: 242px;
+    margin: auto;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 12px;
+    color: var(--color-info-empty);
+    font-family: 'DM Sans';
+
+    @include tablet {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.48px;
+      line-height: 14px;
+      bottom: 5px;
+      margin: auto;
+      max-width: 324px;
+      max-height: auto;
+    }
+    @include desktop {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.48px;
+      line-height: 14px;
     }
   }
 }

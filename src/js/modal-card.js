@@ -109,15 +109,31 @@ const showModalCard = myBook => {
   const markup = `<div class="modal-card__backdrop loading-gentle">
   <div class="modal-card__box">
     <div class="modal-card__close">
-      <button type="button" class="modal-card__close-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28" fill="#111111">
-      <path d="M21 7L7 21M7 7L21 21" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    </button>
+      <button type="button" class="modal-card__close-box">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 28 28"
+          fill="#111111"
+        >
+          <path
+            d="M21 7L7 21M7 7L21 21"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
     <div class="modal-card__body">
       <div class="modal-card__img-box loading-gentle">
-        <img src="${book_image}" alt="Book
-        cover" class="modal-card__img" />
+        <img
+          src="${book_image}"
+          alt="Book
+        cover"
+          class="modal-card__img"
+        />
       </div>
       <div class="modal-card__info">
         <div class="modal-card__info-body">
@@ -128,16 +144,34 @@ const showModalCard = myBook => {
         <div class="modal-card__shops">
           <ul class="shops-list modal">
             <li class="shops-list__item modal">
-              <a href="${buy_links[0].url}" target="_blank" rel="nofollow noopener noreferrer" class="shops-list__link modal">
+              <a
+                href="${buy_links[0].url}"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="shops-list__link modal"
+              >
                 <div class="shops-list__icon-box shops-list__icon-box--amazon modal">
-                  <img src="${amazonIcon}" alt="Amazon logo" class="shops-list__icon-img-amazon modal" />
+                  <img
+                    src="${amazonIcon}"
+                    alt="Amazon logo"
+                    class="shops-list__icon-img-amazon modal"
+                  />
                 </div>
               </a>
             </li>
             <li class="shops-list__item modal">
-              <a href="${buy_links[1].url}" target="_blank" rel="nofollow noopener noreferrer" class="shops-list__link modal">
+              <a
+                href="${buy_links[1].url}"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="shops-list__link modal"
+              >
                 <div class="shops-list__icon-box shops-list__icon-box--apple modal">
-                  <img src="${appleBooksIcon}" alt="Apple Books logo" class="shops-list__icon-img-apple modal" />
+                  <img
+                    src="${appleBooksIcon}"
+                    alt="Apple Books logo"
+                    class="shops-list__icon-img-apple modal"
+                  />
                 </div>
               </a>
             </li>
@@ -149,13 +183,13 @@ const showModalCard = myBook => {
       <div class="button-shopping">
         <button class="button-shopping__content" data-modalid="${_id}">add to shopping list</button>
       </div>
+      <div class="button-shopping__comment modal-card__congrats">
+        <p class="button-shopping__comment-text">
+          Congratulations! You have added the book to the shopping list. To delete, press the button
+          "Remove from the shopping list".
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="comment modal-card__congrats ">
-    <p class="modal-card__congrats-text">
-      Congratulations! You have added the book to the shopping list. To delete, press the
-      button "Remove from the shopping list".
-    </p>
   </div>
 </div>`;
   modalSection.insertAdjacentHTML('beforeend', markup);
