@@ -15,7 +15,7 @@
 .shopping-title {
   color: var(--color-main-font);
   transition: color 500ms;
-  // padding-top: 40px;
+  padding-top: 40px;
   margin-bottom: 40px;
   width: 335px;
   font-size: 32px;
@@ -72,13 +72,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
 }
 
 .card-item {
   animation: show 0.25s ease-in-out;
   &__box {
     position: relative;
-    margin: 0 auto 20px;
     display: flex;
     width: 335px;
     height: 170px;
@@ -298,6 +298,7 @@ body {
 // styles buttons pagination
 .pagination {
   &__buttons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
