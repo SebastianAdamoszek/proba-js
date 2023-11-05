@@ -1,7 +1,8 @@
 .header {
   position: fixed;
   z-index: 15;
-  width: 100%;
+  width: calc(100% - 2%); 
+  margin-left: 1%; 
   transition: background-color 500ms;
   background-color: var(--color-header);
   border: 1.5px solid var(--color-header-border);
@@ -12,7 +13,7 @@
     justify-content: space-between;
     height: 64px;
     padding-block: 18px;
-
+    
     @include tablet {
       height: 72px;
     }
