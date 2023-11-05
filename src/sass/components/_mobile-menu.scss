@@ -1,20 +1,19 @@
+
 $gradient-background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
 
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
 .mobile-menu {
   overflow: hidden;
   position: fixed;
   inset: 0;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   z-index: 10;
-
-  @include tablet {
-    margin-top: 72px;
-  }
+  
   @include tablet {
     display: none;
   }
@@ -24,7 +23,7 @@ $gradient-background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 100vh;
+    height: 100;
     position: relative;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -62,6 +61,4 @@ $gradient-background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4f2ee8
   display: none;
 }
 
-.mobile-menu.is-open {
-  transform: translateX(0);
-}
+
