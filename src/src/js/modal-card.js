@@ -145,11 +145,12 @@ const showModalCard = myBook => {
         </div>
       </div>
     </div>
-    <div class="modal-card__footer">
-      <div class="button-shopping">
-        <button class="button-shopping__content" data-modalid="${_id}">add to shopping list</button>
+    <div>
+      <div class="button-shopping"><a href="#congratsModal"></a>
+        <button class="button-shopping__content" data-modalid="${_id}">add to shopping list
+         </button>
       </div>
-      <div class="modal-card__congrats">
+      <div id="congratsModal" class="modal-card__congrats">
         <p class="modal-card__congrats-text">
           Congratulations! You have added the book to the shopping list. To delete, press the
           button "Remove from the shopping list".

@@ -183,7 +183,7 @@
     font-weight: 700;
     letter-spacing: -0.7px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     @include tablet {
       font-size: 18px;
@@ -203,7 +203,6 @@
   &__comment {
     @include tablet {
       position: absolute;
-
       width: 579px;
       margin-top: 90px;
       padding: 0px 0 20px 0;
