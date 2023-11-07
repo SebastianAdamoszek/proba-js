@@ -307,13 +307,21 @@ body {
   &__button {
     border: 3px solid var(--color-purple-btn);
     border-radius: 50px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    transition: 50ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 12px 4px var(--color-info-empty);
+    }
+    @include tablet {
+      width: 60px;
+      height: 60px;
+    }
   }
   &__button-prev {
     background-color: var(--color-black-btn);
     color: var(--color-white-btn);
-
   }
   &__button-next {
     background-color: var(--color-yellow-btn);
@@ -323,4 +331,17 @@ body {
 .prev-page,
 .next-page {
   display: none;
+}
+.next-page {
+  &:hover {
+    background-color: rgba(47, 0, 123, 0.5);
+    transform: rotate(0deg) translateX(3);
+  }
+}
+
+.prev-page {
+  &:hover {
+    background-color: rgba(47, 0, 123, 0.5);
+    transform: rotate(0deg) translateX(-3);
+  }
 }

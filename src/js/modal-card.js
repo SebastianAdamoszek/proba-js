@@ -90,6 +90,7 @@ const toggleShoppingHandler = event => {
 const adjustModalCard = id => {
   const toggleShoppingButton = document.querySelector('.button-shopping__content');
   const shoppingCongrats = document.querySelector('.modal-card__congrats');
+  
   myBooksId = localStorage.load('myBooksId') || [];
   if (myBooksId.indexOf(id) === -1) {
     toggleShoppingButton.textContent = 'Add to shopping list';
@@ -101,7 +102,17 @@ const adjustModalCard = id => {
     shoppingCongrats.style.display = 'inline';
     return;
   }
+  // const bottomBtn = document.querySelector('.bottom__btn');
+  // const modalContent = document.querySelector('.modal-card__box');
+  
+  // function scrollModalToBottom() {
+  //   modalContent.scrollTop = modalContent.scrollHeight;
+  // }
+  
+  // bottomBtn.addEventListener('click', scrollModalToBottom);
+ 
 };
+
 
 // Create modal window with book info, adjust text and add event listeners to close //
 const showModalCard = myBook => {
@@ -181,7 +192,7 @@ const showModalCard = myBook => {
     </div>
     <div class="button-shopping__box">
       <div class="button-shopping">
-        <button class="button-shopping__content" data-modalid="${_id}">add to shopping list</button>
+        <button class="button-shopping__content bottom__btn" data-modalid="${_id}">add to shopping list</button>
       </div>
       <div class="button-shopping__comment modal-card__congrats">
         <p class="button-shopping__comment-text">
